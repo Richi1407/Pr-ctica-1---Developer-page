@@ -1,0 +1,16 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px;
+} /*esto es para garantizar la uniformidad al mostrar la pagina en diferentes navegadores*/
+
+.title{ /*El punto se pone para llamar o hacer referencia a clases, al llamar a etiquetas no se pone el punto|*/
+    text-align: center;
+    font-size: 3.8rem;
+    
+}
+
+.title span{
+    font-size: 2rem;
+}
