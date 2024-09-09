@@ -3,6 +3,17 @@
 <head>
     <meta charset="UTF-8"> <!--Metadatos es para indicar un conjunto de datos, en este caso UTF-8 es para que el navegador oueda identificar y desplegar simoblos -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Esta sección es para adaptar el como se despliega la vista de la pantalla en cada navegador.-->
+    
+    <!--Importacion de Normalize.css, se recomienda cargar siempre normalize primero.-->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!--Importacion de fuente desde google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!--Para enlazar el css al html-->
     <link rel="preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css">
     <title>Moka Chan</title>
@@ -12,14 +23,16 @@
         <h1 class="title">Ricardo Pérez <span>Developer</span></h1>
     
     </header>
-<!--Aqui va la nav por lo general-->
-    <nav>
-        <a href="#">Inicio</a> <!--a es por ancla, poner # en el href es para indicar que aun no se le podnra nadota-->
-        <a href="#">Sobre mí</a>
-        <a href="#">Clientes</a>
-        <a href="#">Contacto</a>
-    </nav>
-    
+
+    <div class="nav-bg">
+    <!--Aqui va la nav por lo general-->
+        <nav class="navegacion-principal contenedor">
+            <a href="#">Inicio</a> <!--a es por ancla, poner # en el href es para indicar que aun no se le podnra nadota-->
+            <a href="#">Sobre mí</a>
+            <a href="#">Clientes</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </div>
     <section>
         <h2>Diseño y desarrollo Web</h2>
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffc107" fill="none" stroke-linecap="round" stroke-linejoin="round">

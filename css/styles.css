@@ -1,3 +1,11 @@
+:root { /*pseudo clase para la declaracion global de los colores que se van a usar para la página*/
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+}
+
 html{
     font-size: 62.5%;
 }
@@ -14,3 +22,35 @@ body{
 .title span{
     font-size: 2rem;
 }
+
+.navegacion-principal{
+    background-color: var(--secundario);
+    /*margin es por fuera, padding es por dentro*/
+    display: flex; /* Flexbox esta diseñado para alinear elementos en tus diseños*/
+    /*justify-content alinea texto para FILAS /// align-items es para columnas (en estos casos se recomienda usar flex-direction)*/
+    justify-content: space-between;
+    font-weight: bold; /*para poner negritas*/
+    font-size: 2rem; 
+}
+
+.navegacion-principal a:hover{ /*al poner el cursor en los vinculos de la barra de navegacion*/
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+.navegacion-principal a{
+    color: var(--blanco);
+    text-decoration: none; /*remueve el estilo subrayado en el texto*/
+    padding: 1rem;
+
+}
+
+.contenedor{
+    width: 120rem;
+    margin: 0 auto; /*0 se refiere al eje vertical (top y bottom) y auto al horizontal (left, right)*/
+}
+
+.nav-bg{
+    background-color: var(--secundario);
+}
+
