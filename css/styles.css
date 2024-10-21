@@ -138,3 +138,43 @@ h3{
     justify-content: center;
     gap: 10px;
 }
+
+/*Css para darle estilo a la seccion servicios*/
+@media (min-width: 768px){
+    .servicios{
+        display: grid;
+        /*grid-template-columns: 1fr 1fr 1fr; Divide el grid en 3 fragmentos iguales, se debe modificar segun la cantidad de elementos que se tenga*/
+        /*grid-template-columns: 33.3% 33.33.3% 33.3%; otra alternativa*/
+        grid-template-columns: repeat(3, 1fr); /*Esta propiedad define el area de las columnas y la funcion repeat repite 3 veces una fraccion
+        en el grid. Es lo mismo pero mas práctico y sostenible*/
+        column-gap: 1rem; /*gap es espacio vacio entre columnas */
+    }
+}
+    
+    /*Centrar iconos*/
+    .servicio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3{
+            color: var(--secundario); /*Colorear texto*/
+            font-weight: normal; /*Quitar negritas */
+        }
+        p{
+            text-align: center;
+            line-height: 2; /*Interilneado*/
+        }
+    }
+
+    .iconos{
+        background-color: var(--primario);
+        width: 15rem;
+        height: 15rem;
+        border-radius: 50%;
+        /*Para centrar un elemento vertical y horizontalmente  */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+
