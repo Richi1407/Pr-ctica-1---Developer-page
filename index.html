@@ -101,43 +101,48 @@
                 </div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quasi vitae rerum. Vitae qui vero consequuntur natus facere, suscipit eaque architecto porro est tenetur molestias odit, eveniet quo amet accusantium.</p>
             </section>
-         </div>
+        </div>
     
+    
+
+            <section>
+                <h2>Contacto</h2>
+                <form class="formulario">
+                    <fieldset><!--para el formulario-->
+                        <legend>LLena tus datos de contacto</legend>
+                        <div class="contenedor-campos">
+                            
+                            <div class="campo">
+                                <label>Nombre</label>
+                                <input type="text" placeholder="Tu nombre"> <!--Placeholder es para el indicio para que introducir en el campo de texto-->
+                            </div>
+
+                            <div class="campo">
+                                <label>Teléfono</label>
+                                <input type="tel" placeholder="Tu teléfono"> <!--Placeholder es para el indicio para que introducir en el campo de texto-->
+                            </div>
+
+                            <div class="campo">
+                                <label>Correo</label>
+                                <input type="email" placeholder="Tu correo"> <!--Placeholder es para el indicio para que introducir en el campo de texto-->
+                            </div>
+
+                            <div class="campo">
+                                <label>Mensaje</label>
+                                <textarea> </textarea> <!--Placeholder es para el indicio para que introducir en el campo de texto-->
+                            </div>
+                        </div>
+                        <div class="alinear-derecha flex">
+                            <input class="boton w-sm-100" type="submit" value="Enviar"> <!--Poner el type como submit lo convierte en botón automáticamente-->
+                        </div>
+                    
+                    </fieldset>
+                    
+                </form>
+            </section>
+        
     </main>
-
-        <section>
-            <h2>Contacto</h2>
-            <form>
-                <fieldset><!--para el formulario-->
-                    <legend>LLena tus datos de contacto.</legend>
-                    <div>
-                        <label>Nombre</label>
-                        <input type="text" placeholder="Tu nombre"> <!--Placeholder es para el indicio para que introducir en el campo de texto-->
-                    </div>
-
-                    <div>
-                        <label>Teléfono</label>
-                        <input type="tel" placeholder="Tu teléfono"> <!--Placeholder es para el indicio para que introducir en el campo de texto-->
-                    </div>
-
-                    <div>
-                        <label>Correo</label>
-                        <input type="email" placeholder="Tu correo"> <!--Placeholder es para el indicio para que introducir en el campo de texto-->
-                    </div>
-
-                    <div>
-                        <label>Mensaje</label>
-                        <textarea> </textarea> <!--Placeholder es para el indicio para que introducir en el campo de texto-->
-                    </div>
-                    <div>
-                        <input type="submit" value="Enviar"> <!--Poner el type como submit lo convierte en botón automáticamente-->
-                    </div>
-                </fieldset>
-                
-            </form>
-        </section>
-    
-    <footer>
+    <footer class="pie">
         <p>© Todos los derechos reservados</p>
     </footer>
 
